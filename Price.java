@@ -3,5 +3,8 @@ public abstract class Price {
 
     public abstract double getCharge(int daysRented);
 
-    public abstract int getFrequentRenterPoints(int daysRented);  // Método abstrato
+    // Método genérico para retorno de pontos de locação (1 ponto por padrão)
+    public int getFrequentRenterPoints(int daysRented) {
+        return 1;
+    }
 }

@@ -15,6 +15,6 @@ public class RegularPrice extends Price {
 
     @Override
     public int getFrequentRenterPoints(int daysRented) {
-        return 1;  // Um ponto fixo para todos os filmes regulares
+        return 1; // 1 ponto para filmes regulares
     }
 }
