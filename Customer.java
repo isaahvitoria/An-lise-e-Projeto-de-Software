@@ -25,7 +25,6 @@ public class Customer {
 
         while (rentals.hasMoreElements()) {
             Rental each = (Rental) rentals.nextElement();
-            double thisAmount = each.getCharge(); // Atualizado para usar o método movido e renomeado
 
             // Adicionar pontos de locatário frequente
             frequentRenterPoints++;
@@ -34,8 +33,8 @@ public class Customer {
             }
 
             // Mostrar valores para cada aluguel
-            result += "\t" + each.getMovie().getTitle() + "\t" + String.valueOf(thisAmount) + "\n";
-            totalAmount += thisAmount;
+            result += "\t" + each.getMovie().getTitle() + "\t" + String.valueOf(each.getCharge()) + "\n";
+            totalAmount += each.getCharge();
         }
 
         // Adicionar linhas do rodapé

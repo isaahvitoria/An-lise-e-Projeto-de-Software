@@ -1,5 +1,4 @@
 public class Rental {
-
     private Movie _movie;
     private int _daysRented;
 
@@ -16,7 +15,7 @@ public class Rental {
         return _movie;
     }
 
-    public double getCharge() { // Novo método movido e renomeado
+    public double getCharge() {
         double thisAmount = 0;
 
         switch (_movie.getPriceCode()) {
