@@ -1,4 +1,7 @@
 public abstract class Price {
-    // Método abstrato para calcular o valor da cobrança
+    public abstract int getPriceCode();
+
     public abstract double getCharge(int daysRented);
+
+    public abstract int getFrequentRenterPoints(int daysRented);  // Método abstrato
 }
